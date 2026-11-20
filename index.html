@@ -234,7 +234,7 @@
               <div class="text-caption text-ap-ink-muted-48">Stores supported</div>
             </div>
             <div class="text-center">
-              <div class="text-display-md text-ap-ink">3</div>
+              <div class="text-display-md text-ap-ink">4</div>
               <div class="text-caption text-ap-ink-muted-48">Selected projects</div>
             </div>
           </div>
@@ -291,7 +291,7 @@
               </li>
               <li class="flex gap-ap-xs text-body text-ap-body-muted">
                 <span class="text-white/40">&middot;</span>
-                Integrated REST APIs between Laravel back ends and React applications.
+                Integrated REST APIs and Keycloak authentication for Laravel and React applications, using the Keycloak API to sync users from groups.
               </li>
               <li class="flex gap-ap-xs text-body text-ap-body-muted">
                 <span class="text-white/40">&middot;</span>
@@ -333,7 +333,7 @@
             <p class="text-body text-ap-body-muted">Customer experience platform built for 140 stores, with new stores continuing to be added</p>
           </div>
           <div class="border-t border-white/15 pt-ap-sm">
-            <p class="text-body text-ap-body-muted">3 selected projects, including Quizey with a live public demo</p>
+            <p class="text-body text-ap-body-muted">4 selected projects, including a local sentiment API built in Go</p>
           </div>
           <div class="border-t border-white/15 pt-ap-sm">
             <p class="text-body text-ap-body-muted">Oracle ERP accounting exception reports built with SQL for audit and compliance</p>
@@ -351,6 +351,36 @@
         <h2 class="text-display-lg text-ap-ink text-center mb-ap-xxl">Projects</h2>
 
         <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-ap-lg">
+          <!-- Local Sentiment API -->
+          <div class="bg-ap-canvas border border-ap-hairline rounded-ap-lg overflow-hidden">
+            <div class="aspect-video bg-ap-tile-1 p-ap-lg text-white flex flex-col justify-between" aria-label="Local Sentiment API response example">
+              <div class="flex items-center justify-between text-micro-legal text-white/60">
+                <span>127.0.0.1:18080</span>
+                <span class="inline-flex items-center gap-1"><span class="w-1.5 h-1.5 rounded-full bg-ap-primary"></span>Local service</span>
+              </div>
+              <div class="border-l-2 border-ap-primary pl-ap-sm">
+                <p class="text-caption text-white/60 mb-ap-xxs">POST /api/analyze</p>
+                <p class="text-body-strong text-white">Aggregate sentiment only</p>
+              </div>
+              <p class="font-mono text-micro-legal text-white/70">{&quot;overall_sentiment&quot;:&quot;mixed&quot;}</p>
+            </div>
+            <div class="p-ap-lg">
+              <h3 class="text-body-strong text-ap-ink mb-ap-xxs">Local Sentiment API</h3>
+              <p class="text-caption text-ap-ink-muted-48 mb-ap-sm">Self-hosted Go API that runs a quantized ONNX sentiment model locally and returns aggregate results through HTTP.</p>
+              <div class="flex flex-wrap gap-ap-xxs mb-ap-sm">
+                <span class="text-micro-legal text-ap-ink-muted-48 border border-ap-hairline rounded-full px-[10px] py-[3px]">Runs locally</span>
+                <span class="text-micro-legal text-ap-ink-muted-48 border border-ap-hairline rounded-full px-[10px] py-[3px]">Aggregate-only response</span>
+                <span class="text-micro-legal text-ap-ink-muted-48 border border-ap-hairline rounded-full px-[10px] py-[3px]">Windows executable</span>
+              </div>
+              <div class="flex flex-wrap gap-ap-xxs mb-ap-md">
+                <span class="text-micro-legal text-ap-ink-muted-80 bg-ap-parchment rounded-full px-[10px] py-[3px]">Go</span>
+                <span class="text-micro-legal text-ap-ink-muted-80 bg-ap-parchment rounded-full px-[10px] py-[3px]">ONNX Runtime</span>
+                <span class="text-micro-legal text-ap-ink-muted-80 bg-ap-parchment rounded-full px-[10px] py-[3px]">HTTP API</span>
+              </div>
+              <a href="https://github.com/ChrisEarlAmar/cea-sentiment-local-api" target="_blank" rel="noopener noreferrer" class="text-caption text-ap-primary hover:underline">View on GitHub &rarr;</a>
+            </div>
+          </div>
+
           <!-- MVP Survey Tool -->
           <div class="bg-ap-canvas border border-ap-hairline rounded-ap-lg overflow-hidden">
             <div class="aspect-video bg-ap-parchment overflow-hidden">
@@ -610,12 +640,13 @@
             </ul>
           </div>
           <div class="bg-ap-canvas border border-ap-hairline rounded-ap-lg p-ap-lg">
-            <h3 class="text-caption-strong text-ap-ink uppercase tracking-wide mb-ap-md">Data &amp; Tools</h3>
+            <h3 class="text-caption-strong text-ap-ink uppercase tracking-wide mb-ap-md">Data, Tools &amp; Auth</h3>
             <ul class="grid grid-cols-2 gap-x-ap-sm gap-y-ap-sm text-caption text-ap-ink-muted-80">
               <li class="flex items-center gap-ap-xs"><img src="assets/tech-icons/mysql-icon.svg" alt="" class="w-5 h-5 object-contain"><span>MySQL</span></li>
               <li class="flex items-center gap-ap-xs"><img src="assets/tech-icons/oracle-icon.svg" alt="" class="w-5 h-5 object-contain"><span>Oracle SQL Developer</span></li>
               <li class="flex items-center gap-ap-xs"><img src="assets/tech-icons/gitlab-icon.svg" alt="" class="w-5 h-5 object-contain"><span>GitLab</span></li>
               <li class="flex items-center gap-ap-xs"><img src="assets/tech-icons/docker-icon.svg" alt="" class="w-5 h-5 object-contain"><span>Docker</span></li>
+              <li class="flex items-center gap-ap-xs"><img src="assets/tech-icons/keycloak-icon.svg" alt="" class="w-5 h-5 object-contain"><span>Keycloak</span></li>
             </ul>
           </div>
           <div class="bg-ap-canvas border border-ap-hairline rounded-ap-lg p-ap-lg">
