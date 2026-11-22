@@ -350,9 +350,9 @@
       <div class="max-w-[1440px] mx-auto px-6 md:px-10 py-ap-xxl md:py-ap-section">
         <h2 class="text-display-lg text-ap-ink text-center mb-ap-xxl">Projects</h2>
 
-        <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-ap-lg">
+        <div class="grid md:grid-cols-2 md:auto-rows-fr gap-ap-lg">
           <!-- Local Sentiment API -->
-          <div class="bg-ap-canvas border border-ap-hairline rounded-ap-lg overflow-hidden">
+          <div class="h-full bg-ap-canvas border border-ap-hairline rounded-ap-lg overflow-hidden flex flex-col">
             <div class="aspect-video bg-ap-tile-1 p-ap-lg text-white flex flex-col justify-between" aria-label="Local Sentiment API response example">
               <div class="flex items-center justify-between text-micro-legal text-white/60">
                 <span>127.0.0.1:18080</span>
@@ -364,7 +364,7 @@
               </div>
               <p class="font-mono text-micro-legal text-white/70">{&quot;overall_sentiment&quot;:&quot;mixed&quot;}</p>
             </div>
-            <div class="p-ap-lg">
+            <div class="p-ap-lg flex flex-col grow">
               <h3 class="text-body-strong text-ap-ink mb-ap-xxs">Local Sentiment API</h3>
               <p class="text-caption text-ap-ink-muted-48 mb-ap-sm">Self-hosted Go API that runs a quantized ONNX sentiment model locally and returns aggregate results through HTTP.</p>
               <div class="flex flex-wrap gap-ap-xxs mb-ap-sm">
@@ -377,16 +377,16 @@
                 <span class="text-micro-legal text-ap-ink-muted-80 bg-ap-parchment rounded-full px-[10px] py-[3px]">ONNX Runtime</span>
                 <span class="text-micro-legal text-ap-ink-muted-80 bg-ap-parchment rounded-full px-[10px] py-[3px]">HTTP API</span>
               </div>
-              <a href="https://github.com/ChrisEarlAmar/cea-sentiment-local-api" target="_blank" rel="noopener noreferrer" class="text-caption text-ap-primary hover:underline">View on GitHub &rarr;</a>
+              <a href="https://github.com/ChrisEarlAmar/cea-sentiment-local-api" target="_blank" rel="noopener noreferrer" class="text-caption text-ap-primary hover:underline mt-auto">View on GitHub &rarr;</a>
             </div>
           </div>
 
           <!-- MVP Survey Tool -->
-          <div class="bg-ap-canvas border border-ap-hairline rounded-ap-lg overflow-hidden">
+          <div class="h-full bg-ap-canvas border border-ap-hairline rounded-ap-lg overflow-hidden flex flex-col">
             <div class="aspect-video bg-ap-parchment overflow-hidden">
               <video class="project-video w-full h-full object-cover" src="assets/project-media/mvp-survey.mp4" muted loop playsinline preload="metadata" aria-label="MVP Survey Tool demo preview"></video>
             </div>
-            <div class="p-ap-lg">
+            <div class="p-ap-lg flex flex-col grow">
               <h3 class="text-body-strong text-ap-ink mb-ap-xxs">MVP Survey Tool</h3>
               <p class="text-caption text-ap-ink-muted-48 mb-ap-sm">Survey-system prototype for branch and store data collection.</p>
               <div class="flex flex-wrap gap-ap-xxs mb-ap-sm">
@@ -400,16 +400,16 @@
                 <span class="text-micro-legal text-ap-ink-muted-80 bg-ap-parchment rounded-full px-[10px] py-[3px]">WebSockets</span>
                 <span class="text-micro-legal text-ap-ink-muted-80 bg-ap-parchment rounded-full px-[10px] py-[3px]">Material UI</span>
               </div>
-              <a href="https://github.com/ChrisEarlAmar/cea-mvp-survey" target="_blank" rel="noopener noreferrer" class="text-caption text-ap-primary hover:underline">View on GitHub &rarr;</a>
+              <a href="https://github.com/ChrisEarlAmar/cea-mvp-survey" target="_blank" rel="noopener noreferrer" class="text-caption text-ap-primary hover:underline mt-auto">View on GitHub &rarr;</a>
             </div>
           </div>
 
           <!-- Batch Manager -->
-          <div class="bg-ap-canvas border border-ap-hairline rounded-ap-lg overflow-hidden">
+          <div class="h-full bg-ap-canvas border border-ap-hairline rounded-ap-lg overflow-hidden flex flex-col">
             <div class="aspect-video bg-ap-parchment overflow-hidden">
               <video class="project-video w-full h-full object-cover" src="assets/project-media/batch-manager.mp4" muted loop playsinline preload="metadata" aria-label="Batch Manager demo preview"></video>
             </div>
-            <div class="p-ap-lg">
+            <div class="p-ap-lg flex flex-col grow">
               <h3 class="text-body-strong text-ap-ink mb-ap-xxs">Batch Manager</h3>
               <p class="text-caption text-ap-ink-muted-48 mb-ap-sm">Windows utility for PHP Artisan commands, queues, and WebSocket servers.</p>
               <div class="flex flex-wrap gap-ap-xxs mb-ap-sm">
@@ -422,16 +422,16 @@
                 <span class="text-micro-legal text-ap-ink-muted-80 bg-ap-parchment rounded-full px-[10px] py-[3px]">PHP Artisan</span>
                 <span class="text-micro-legal text-ap-ink-muted-80 bg-ap-parchment rounded-full px-[10px] py-[3px]">WebSockets</span>
               </div>
-              <a href="https://github.com/ChrisEarlAmar/cea-batch-manager" target="_blank" rel="noopener noreferrer" class="text-caption text-ap-primary hover:underline">View on GitHub &rarr;</a>
+              <a href="https://github.com/ChrisEarlAmar/cea-batch-manager" target="_blank" rel="noopener noreferrer" class="text-caption text-ap-primary hover:underline mt-auto">View on GitHub &rarr;</a>
             </div>
           </div>
 
           <!-- Quizey -->
-          <div class="bg-ap-canvas border border-ap-hairline rounded-ap-lg overflow-hidden">
+          <div class="h-full bg-ap-canvas border border-ap-hairline rounded-ap-lg overflow-hidden flex flex-col">
             <div class="aspect-video bg-ap-parchment overflow-hidden">
               <video class="project-video w-full h-full object-cover" src="assets/project-media/quizey.mp4" muted loop playsinline preload="metadata" aria-label="Quizey demo preview"></video>
             </div>
-            <div class="p-ap-lg">
+            <div class="p-ap-lg flex flex-col grow">
               <h3 class="text-body-strong text-ap-ink mb-ap-xxs">Quizey</h3>
               <p class="text-caption text-ap-ink-muted-48 mb-ap-sm">No-sign-in quiz app with IndexedDB, custom .qzy sharing, and Android APK builds using Capacitor and Android Studio.</p>
               <div class="flex flex-wrap gap-ap-xxs mb-ap-sm">
@@ -448,7 +448,7 @@
                 <span class="text-micro-legal text-ap-ink-muted-80 bg-ap-parchment rounded-full px-[10px] py-[3px]">Capacitor</span>
                 <span class="text-micro-legal text-ap-ink-muted-80 bg-ap-parchment rounded-full px-[10px] py-[3px]">Android Studio</span>
               </div>
-              <div class="flex flex-wrap gap-ap-md">
+              <div class="flex flex-wrap gap-ap-md mt-auto">
                 <a href="https://chrisearlamar.github.io/Quizey" target="_blank" rel="noopener noreferrer" class="text-caption text-ap-primary hover:underline">Live Demo &rarr;</a>
                 <a href="https://github.com/ChrisEarlAmar/cea-quizey" target="_blank" rel="noopener noreferrer" class="text-caption text-ap-primary hover:underline">View on GitHub &rarr;</a>
               </div>
@@ -643,6 +643,7 @@
             <h3 class="text-caption-strong text-ap-ink uppercase tracking-wide mb-ap-md">Data, Tools &amp; Auth</h3>
             <ul class="grid grid-cols-2 gap-x-ap-sm gap-y-ap-sm text-caption text-ap-ink-muted-80">
               <li class="flex items-center gap-ap-xs"><img src="assets/tech-icons/mysql-icon.svg" alt="" class="w-5 h-5 object-contain"><span>MySQL</span></li>
+              <li class="flex items-center gap-ap-xs"><img src="assets/tech-icons/postgress-sql-icon.svg" alt="" class="w-5 h-5 object-contain"><span>PostgreSQL</span></li>
               <li class="flex items-center gap-ap-xs"><img src="assets/tech-icons/oracle-icon.svg" alt="" class="w-5 h-5 object-contain"><span>Oracle SQL Developer</span></li>
               <li class="flex items-center gap-ap-xs"><img src="assets/tech-icons/gitlab-icon.svg" alt="" class="w-5 h-5 object-contain"><span>GitLab</span></li>
               <li class="flex items-center gap-ap-xs"><img src="assets/tech-icons/docker-icon.svg" alt="" class="w-5 h-5 object-contain"><span>Docker</span></li>
