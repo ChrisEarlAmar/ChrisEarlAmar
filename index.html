@@ -350,21 +350,13 @@
       <div class="max-w-[1440px] mx-auto px-6 md:px-10 py-ap-xxl md:py-ap-section">
         <h2 class="text-display-lg text-ap-ink text-center mb-ap-xxl">Projects</h2>
 
-        <div class="grid md:grid-cols-2 md:auto-rows-fr gap-ap-lg">
+        <div class="grid md:grid-cols-2 md:auto-rows-fr gap-ap-md">
           <!-- Local Sentiment API -->
           <div class="h-full bg-ap-canvas border border-ap-hairline rounded-ap-lg overflow-hidden flex flex-col">
-            <div class="aspect-video bg-ap-tile-1 p-ap-lg text-white flex flex-col justify-between" aria-label="Local Sentiment API response example">
-              <div class="flex items-center justify-between text-micro-legal text-white/60">
-                <span>127.0.0.1:18080</span>
-                <span class="inline-flex items-center gap-1"><span class="w-1.5 h-1.5 rounded-full bg-ap-primary"></span>Local service</span>
-              </div>
-              <div class="border-l-2 border-ap-primary pl-ap-sm">
-                <p class="text-caption text-white/60 mb-ap-xxs">POST /api/analyze</p>
-                <p class="text-body-strong text-white">Aggregate sentiment only</p>
-              </div>
-              <p class="font-mono text-micro-legal text-white/70">{&quot;overall_sentiment&quot;:&quot;mixed&quot;}</p>
+            <div class="aspect-video md:aspect-[16/7] bg-ap-parchment overflow-hidden">
+              <video class="project-video w-full h-full object-cover" src="assets/project-media/local-sentiment-api.mp4" muted loop playsinline preload="metadata" aria-label="Local Sentiment API demo preview"></video>
             </div>
-            <div class="p-ap-lg flex flex-col grow">
+            <div class="p-ap-md flex flex-col grow">
               <h3 class="text-body-strong text-ap-ink mb-ap-xxs">Local Sentiment API</h3>
               <p class="text-caption text-ap-ink-muted-48 mb-ap-sm">Self-hosted Go API that runs a quantized ONNX sentiment model locally and returns aggregate results through HTTP.</p>
               <div class="flex flex-wrap gap-ap-xxs mb-ap-sm">
@@ -383,10 +375,10 @@
 
           <!-- MVP Survey Tool -->
           <div class="h-full bg-ap-canvas border border-ap-hairline rounded-ap-lg overflow-hidden flex flex-col">
-            <div class="aspect-video bg-ap-parchment overflow-hidden">
+            <div class="aspect-video md:aspect-[16/7] bg-ap-parchment overflow-hidden">
               <video class="project-video w-full h-full object-cover" src="assets/project-media/mvp-survey.mp4" muted loop playsinline preload="metadata" aria-label="MVP Survey Tool demo preview"></video>
             </div>
-            <div class="p-ap-lg flex flex-col grow">
+            <div class="p-ap-md flex flex-col grow">
               <h3 class="text-body-strong text-ap-ink mb-ap-xxs">MVP Survey Tool</h3>
               <p class="text-caption text-ap-ink-muted-48 mb-ap-sm">Survey-system prototype for branch and store data collection.</p>
               <div class="flex flex-wrap gap-ap-xxs mb-ap-sm">
@@ -406,10 +398,10 @@
 
           <!-- Batch Manager -->
           <div class="h-full bg-ap-canvas border border-ap-hairline rounded-ap-lg overflow-hidden flex flex-col">
-            <div class="aspect-video bg-ap-parchment overflow-hidden">
+            <div class="aspect-video md:aspect-[16/7] bg-ap-parchment overflow-hidden">
               <video class="project-video w-full h-full object-cover" src="assets/project-media/batch-manager.mp4" muted loop playsinline preload="metadata" aria-label="Batch Manager demo preview"></video>
             </div>
-            <div class="p-ap-lg flex flex-col grow">
+            <div class="p-ap-md flex flex-col grow">
               <h3 class="text-body-strong text-ap-ink mb-ap-xxs">Batch Manager</h3>
               <p class="text-caption text-ap-ink-muted-48 mb-ap-sm">Windows utility for PHP Artisan commands, queues, and WebSocket servers.</p>
               <div class="flex flex-wrap gap-ap-xxs mb-ap-sm">
@@ -428,10 +420,10 @@
 
           <!-- Quizey -->
           <div class="h-full bg-ap-canvas border border-ap-hairline rounded-ap-lg overflow-hidden flex flex-col">
-            <div class="aspect-video bg-ap-parchment overflow-hidden">
+            <div class="aspect-video md:aspect-[16/7] bg-ap-parchment overflow-hidden">
               <video class="project-video w-full h-full object-cover" src="assets/project-media/quizey.mp4" muted loop playsinline preload="metadata" aria-label="Quizey demo preview"></video>
             </div>
-            <div class="p-ap-lg flex flex-col grow">
+            <div class="p-ap-md flex flex-col grow">
               <h3 class="text-body-strong text-ap-ink mb-ap-xxs">Quizey</h3>
               <p class="text-caption text-ap-ink-muted-48 mb-ap-sm">No-sign-in quiz app with IndexedDB, custom .qzy sharing, and Android APK builds using Capacitor and Android Studio.</p>
               <div class="flex flex-wrap gap-ap-xxs mb-ap-sm">
